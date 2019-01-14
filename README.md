@@ -51,3 +51,7 @@ So here is swfdump of combined swf library:
 
 As we can see symbol `B` (idref=2) uses `PlaceObject3` tag with only className property (no reference by id).
 AFAIK openfl (8.8.0 at moment) does not handle that properly.
+
+## Workaround
+
+You can "link" all references by className to ids before converting to swflite ([patch](https://gist.github.com/mrchnk/ef7d5525ee326c96cceddf758aad0eef))

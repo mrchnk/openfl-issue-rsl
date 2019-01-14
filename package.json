@@ -1,0 +1,16 @@
+{
+  "name": "openfl-rsl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build-main-a-b": "mxmlc -compiler.library-path+=assets/a.swc -compiler.library-path+=assets/b.swc -compiler.source-path+=src/as3 -output bin/main-a-b.swf src/as3/Main.as",
+    "process-main-a-b": "haxelib run openfl process bin/main-a-b.swf",
+    "build-ab": "compc -compiler.include-libraries+=assets/a.swc -compiler.include-libraries+=assets/b.swc -output bin/ab.swc",
+    "build-main-ab": "mxmlc -compiler.library-path+=bin/ab.swc -compiler.source-path+=src/as3 -output bin/main-ab.swf src/as3/Main.as",
+    "process-main-ab": "haxelib run openfl process bin/main-ab.swf",
+    "build-haxe": "haxelib run openfl build html5",
+    "build": "npm run build-main-a-b && npm run process-main-a-b && npm run build-ab && npm run build-main-ab && npm run process-main-ab && npm run build-haxe",
+    "serve": "haxelib run openfl run html5"
+  }
+}

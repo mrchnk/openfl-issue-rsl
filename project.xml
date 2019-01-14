@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+
+	<meta title="openfl-rsl" package="io.github.mrchnk.openfl-rsl" version="1.0.0" company="mrchnk" />
+	<app main="Main" path="bin/app" file="Main" />
+
+	<window width="400" height="400" fps="30" />
+
+	<source path="src/haxe" />
+
+	<haxelib name="openfl" />
+
+	<library path="bin/main-ab.swf" preload="true" />
+	<library path="bin/main-a-b.swf" preload="true" />
+
+</project>

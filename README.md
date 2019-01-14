@@ -6,8 +6,8 @@ issue with "Runtime Shared Library" items in swf files
 
 I have several resource libraries (swc) created with Adobe Animate (fla) that shares common elements defined in separated library.
 
-- [res/a.swc](res/a.swc) - common resource library with element `A`
-- [res/b.swc](res/b.swc) - resouce library with element `B` that includes symbol `A` using "runtime shared library" feature
+- [res/a.swc](res/a.swc) - common resource library with [element `A`](doc/export-a.png)
+- [res/b.swc](res/b.swc) - resouce library with element `B` that includes symbol `A` [using "runtime shared library"](doc/import-a.png) feature
 
 That setup allow to separate resources by libraries while have common elements across all objects. That elements are not duplicated.
 

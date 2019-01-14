@@ -21,7 +21,7 @@ It consits of two elements: common `A` with letter A and letter B
 
 ## The problem
 
-openfl does not properly convert such swf files into swflite libraries. 
+openfl does not properly convert such swf files into swflite libraries, even if all resource libraries combined into single swf file before.
 
 ![openfl](doc/openfl.png)
 
